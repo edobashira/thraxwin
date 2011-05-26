@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{4abaa3bc-4201-4862-85e8-fb345220905a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\main">
+      <UniqueIdentifier>{737c4a0e-68d4-4923-8108-1af985883c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\ast">
+      <UniqueIdentifier>{60cc14df-6324-40cb-997b-28b0ca02a1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\walker">
+      <UniqueIdentifier>{ac597690-db23-44d7-a42b-5fe7271a5c39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\flags">
+      <UniqueIdentifier>{19be38f1-2f56-40f0-b458-655e772ef1d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\util">
+      <UniqueIdentifier>{576190ca-d507-428d-93ca-38aba22a7215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\algo">
+      <UniqueIdentifier>{18128c2f-cfe4-424c-a483-03f0524b476f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\compat">
+      <UniqueIdentifier>{da8f1676-deae-423f-aa42-a7b7c5db7592}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\bin\compiler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\main\grm-compiler.cc">
+      <Filter>Source Files\lib\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\main\lexer.cc">
+      <Filter>Source Files\lib\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\main\grm-manager.cc">
+      <Filter>Source Files\lib\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\collection-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\string-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\fst-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\function-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\grammar-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\identifier-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\import-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\return-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\rule-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\ast\statement-node.cc">
+      <Filter>Source Files\lib\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\flags\flags.cc">
+      <Filter>Source Files\lib\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\walker\evaluator-specializations.cc">
+      <Filter>Source Files\lib\walker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\walker\identifier-counter.cc">
+      <Filter>Source Files\lib\walker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\walker\loader.cc">
+      <Filter>Source Files\lib\walker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\walker\namespace.cc">
+      <Filter>Source Files\lib\walker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\walker\printer.cc">
+      <Filter>Source Files\lib\walker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\walker\stringfst.cc">
+      <Filter>Source Files\lib\walker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\walker\walker.cc">
+      <Filter>Source Files\lib\walker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\parser.cc">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib\util\utils.cc">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\include\thrax\arcsort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\cdrewrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\closure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\collection-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\compose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\concat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\connect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\datatype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\determinize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\difference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\evaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\expand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\fst-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\function-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\grammar-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\grm-compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\grm-manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\identifier-counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\identifier-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\import-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\invert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\lexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\loadfst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\loadfstfromfar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\minimize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\optimize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\project.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\return-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\reverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\rewrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\rmepsilon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\rule-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\statement-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\stringfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\stringfst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\string-node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\symboltable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\thrax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\union.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\unordered_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\unordered_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\walker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\algo\context_dependent_rewrite.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\algo\prefix_tree.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\algo\resource-map.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\compat\closure.h">
+      <Filter>Header Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\compat\compat.h">
+      <Filter>Header Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\compat\oneof.h">
+      <Filter>Header Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\compat\registry.h">
+      <Filter>Header Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\compat\stlfunctions.h">
+      <Filter>Header Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\thrax\compat\utils.h">
+      <Filter>Header Files\compat</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

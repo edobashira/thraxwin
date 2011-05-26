@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74B131F0-C545-49B4-93FF-D3F74D3B17D3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>compiler</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\thrax.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\thrax.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\bin\compiler.cc" />
+    <ClCompile Include="..\..\src\lib\ast\collection-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\fst-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\function-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\grammar-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\identifier-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\import-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\return-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\rule-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\statement-node.cc" />
+    <ClCompile Include="..\..\src\lib\ast\string-node.cc" />
+    <ClCompile Include="..\..\src\lib\flags\flags.cc" />
+    <ClCompile Include="..\..\src\lib\main\grm-compiler.cc" />
+    <ClCompile Include="..\..\src\lib\main\grm-manager.cc" />
+    <ClCompile Include="..\..\src\lib\main\lexer.cc" />
+    <ClCompile Include="..\..\src\lib\parser.cc" />
+    <ClCompile Include="..\..\src\lib\util\utils.cc" />
+    <ClCompile Include="..\..\src\lib\walker\evaluator-specializations.cc" />
+    <ClCompile Include="..\..\src\lib\walker\identifier-counter.cc" />
+    <ClCompile Include="..\..\src\lib\walker\loader.cc" />
+    <ClCompile Include="..\..\src\lib\walker\namespace.cc" />
+    <ClCompile Include="..\..\src\lib\walker\printer.cc" />
+    <ClCompile Include="..\..\src\lib\walker\stringfst.cc" />
+    <ClCompile Include="..\..\src\lib\walker\walker.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\include\thrax\algo\context_dependent_rewrite.h" />
+    <ClInclude Include="..\..\src\include\thrax\algo\prefix_tree.h" />
+    <ClInclude Include="..\..\src\include\thrax\algo\resource-map.h" />
+    <ClInclude Include="..\..\src\include\thrax\arcsort.h" />
+    <ClInclude Include="..\..\src\include\thrax\cdrewrite.h" />
+    <ClInclude Include="..\..\src\include\thrax\closure.h" />
+    <ClInclude Include="..\..\src\include\thrax\collection-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\compat\closure.h" />
+    <ClInclude Include="..\..\src\include\thrax\compat\compat.h" />
+    <ClInclude Include="..\..\src\include\thrax\compat\oneof.h" />
+    <ClInclude Include="..\..\src\include\thrax\compat\registry.h" />
+    <ClInclude Include="..\..\src\include\thrax\compat\stlfunctions.h" />
+    <ClInclude Include="..\..\src\include\thrax\compat\utils.h" />
+    <ClInclude Include="..\..\src\include\thrax\compose.h" />
+    <ClInclude Include="..\..\src\include\thrax\concat.h" />
+    <ClInclude Include="..\..\src\include\thrax\connect.h" />
+    <ClInclude Include="..\..\src\include\thrax\datatype.h" />
+    <ClInclude Include="..\..\src\include\thrax\determinize.h" />
+    <ClInclude Include="..\..\src\include\thrax\difference.h" />
+    <ClInclude Include="..\..\src\include\thrax\evaluator.h" />
+    <ClInclude Include="..\..\src\include\thrax\expand.h" />
+    <ClInclude Include="..\..\src\include\thrax\fst-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\function-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\function.h" />
+    <ClInclude Include="..\..\src\include\thrax\grammar-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\grm-compiler.h" />
+    <ClInclude Include="..\..\src\include\thrax\grm-manager.h" />
+    <ClInclude Include="..\..\src\include\thrax\identifier-counter.h" />
+    <ClInclude Include="..\..\src\include\thrax\identifier-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\import-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\invert.h" />
+    <ClInclude Include="..\..\src\include\thrax\lexer.h" />
+    <ClInclude Include="..\..\src\include\thrax\loadfst.h" />
+    <ClInclude Include="..\..\src\include\thrax\loadfstfromfar.h" />
+    <ClInclude Include="..\..\src\include\thrax\minimize.h" />
+    <ClInclude Include="..\..\src\include\thrax\namespace.h" />
+    <ClInclude Include="..\..\src\include\thrax\node.h" />
+    <ClInclude Include="..\..\src\include\thrax\optimize.h" />
+    <ClInclude Include="..\..\src\include\thrax\printer.h" />
+    <ClInclude Include="..\..\src\include\thrax\project.h" />
+    <ClInclude Include="..\..\src\include\thrax\return-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\reverse.h" />
+    <ClInclude Include="..\..\src\include\thrax\rewrite.h" />
+    <ClInclude Include="..\..\src\include\thrax\rmepsilon.h" />
+    <ClInclude Include="..\..\src\include\thrax\rule-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\statement-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\string-node.h" />
+    <ClInclude Include="..\..\src\include\thrax\stringfile.h" />
+    <ClInclude Include="..\..\src\include\thrax\stringfst.h" />
+    <ClInclude Include="..\..\src\include\thrax\symboltable.h" />
+    <ClInclude Include="..\..\src\include\thrax\thrax.h" />
+    <ClInclude Include="..\..\src\include\thrax\union.h" />
+    <ClInclude Include="..\..\src\include\thrax\unordered_map.h" />
+    <ClInclude Include="..\..\src\include\thrax\unordered_set.h" />
+    <ClInclude Include="..\..\src\include\thrax\walker.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
